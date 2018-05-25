@@ -1,0 +1,67 @@
+label {
+ display: inline;
+cursor: pointer;
+}
+
+.card {
+  width: 100% !important;
+  height: 350px !important;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.card div {
+  width: 100% !important;
+  height: 350px !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+.card .back  {
+  transform: rotateY(180deg);
+  position: relative;
+  bottom: 350px;
+  
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.front img, .back img {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+ /* căn giữa chữ */
+.area { 
+  width: 300px; 
+  height: 300px; 
+  position: relative;
+}
+.bubble { 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 300px; 
+  height: 84px; 
+  display: table; 
+}
+
+.bubble p {
+  font-size: 50px;
+  max-width: 300px;
+  word-wrap: break-word;
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+}
